@@ -1,69 +1,27 @@
-# React + TypeScript + Vite
+Quizzes Application
+This application allows users to create, take, and manage quizzes, featuring user authentication and detailed result viewing.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Authentication: Register and log in to your account.
 
-Currently, two official plugins are available:
+Quiz Creation:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Create new quizzes with custom titles.
 
-## Expanding the ESLint configuration
+Add Boolean (True/False), Input (text answer), and Checkbox (multiple choice with multiple correct answers) questions.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Quiz Management: View and delete your created quizzes.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Take Quizzes: Engage with an interactive interface to answer various question types.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+View Results: See your score and a detailed breakdown of your answers versus the correct ones for each question.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Technologies
+Frontend: React, TypeScript, Tailwind CSS, React Router DOM, Redux Toolkit, Axios.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+You can see the website on `https://cebanoleksandr.github.io/developers-today-quiz/#/`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+To login you can use:
+ - email - `alex@gmail.com`
+ - password - `test1234`
+Or register a new account
