@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: 'https://developers-today-quizz-be-uvws.vercel.app',
+  baseURL: 'developers-today-quizz-be-ynvo-rfeqzn768.vercel.app',
   headers: {
     'Content-Type': 'application/json',
   }
